@@ -1,0 +1,15 @@
+################################
+#    idfk
+#   Creators:  Yormit
+################################
+
+## set score
+execute as @a unless score @s y_or_CD matches 0.. run scoreboard players set @s y_or_CD 0
+#enable trigger
+scoreboard players enable @a Origin_Reset
+#run the whole fucking thing
+execute as @a[scores={Origin_Reset=1..}] at @s run function reset_origin:y_reset/reset
+
+### END ###
+function reset_origin:main/end
+#what are you looking for green fork?
