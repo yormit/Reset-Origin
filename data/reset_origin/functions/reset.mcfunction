@@ -1,0 +1,2 @@
+execute if entity @s[scores={y_origin_r=1..}] as @s at @s run tellraw @s {"text":"You need to wait at least 20 hours in between switching your origin!","color":"red","bold":false,"italic":true}
+execute if entity @s[scores={y_origin_r=0}] as @s at @s run function reset_origin:dev/apply_reset
