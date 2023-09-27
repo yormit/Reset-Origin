@@ -1,6 +1,6 @@
 tag @s add y_or_tempSync
 scoreboard players set @s y_or_CD 1
-execute as @e[type=marker,tag=y_or] if score @s y_or_ID = @e[type=player,limit=1,tag=y_or_tempSync,scores={y_or_CD=1..}] y_or_ID at @s run function reset_origin:markers/oncooldown
+execute as @e[type=armor_stand,tag=y_or] if score @s y_or_ID = @e[type=player,limit=1,tag=y_or_tempSync,scores={y_or_CD=1..}] y_or_ID at @s run function reset_origin:markers/oncooldown
 tag @s remove y_or_tempSync
 origin set @s origins:origin origins:empty
 origin gui @s origins:origin
